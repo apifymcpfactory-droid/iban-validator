@@ -60,3 +60,5 @@ Validation only — **no bank-name or BIC enrichment**. Confirming an IBAN's str
 ## License
 
 MIT
+
+— A Howth Technology Factory tool. Official sources, nothing stored.

@@ -22,6 +22,6 @@
         "build": "tsc",
         "test": "vitest run"
     },
-    "author": "It's not you it's me",
+    "author": "Howth Technology Factory",
     "license": "ISC"
 }

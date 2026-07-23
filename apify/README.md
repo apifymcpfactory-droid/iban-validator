@@ -113,3 +113,5 @@ IBANs are processed entirely in memory against a bundled, public reference table
 - **[EU VAT Validator](https://apify.com/apifmcpfactory/eu-vat-validator)** — validate EU VAT numbers against the official VIES registry, with audit-evidence consultation numbers.
 - **[Sanctions Screening](https://apify.com/apifmcpfactory/sanctions-screening)** — screen names against official OFAC, EU, UK and UN sanctions lists in bulk.
 - **[Tech Stack Detector](https://apify.com/apifmcpfactory/tech-stack-detector)** — find out what any website is built with (CMS, ecommerce, frameworks, analytics).
+
+— A Howth Technology Factory tool. Official sources, nothing stored.

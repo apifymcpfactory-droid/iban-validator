@@ -106,3 +106,5 @@ mcpize publish --show
 ## License
 
 MIT
+
+— A Howth Technology Factory tool. Official sources, nothing stored.
