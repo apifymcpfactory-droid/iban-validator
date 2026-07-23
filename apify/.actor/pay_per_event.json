@@ -1,0 +1,12 @@
+{
+    "apify-actor-start": {
+        "eventTitle": "Actor start",
+        "eventDescription": "Covers the first few seconds of compute for starting the Actor run.",
+        "eventPriceUsd": 0.00005
+    },
+    "apify-default-dataset-item": {
+        "eventTitle": "IBAN checked",
+        "eventDescription": "Charged once per IBAN validated and written to the dataset.",
+        "eventPriceUsd": 0.005
+    }
+}

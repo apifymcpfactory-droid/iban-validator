@@ -1,0 +1,17 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "IBAN Validator",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "ibans": {
+            "title": "IBANs",
+            "type": "array",
+            "description": "IBANs to validate, in any casing and with or without spaces (e.g. \"gb29 nwbk 6016 1331 9268 19\" is normalized automatically). Each entry produces exactly one result item and is billed at $0.005 — up to 1000 per run. If omitted, two demo IBANs (a valid UK one, a valid German one) are used — always pass your own list.",
+            "editor": "stringList",
+            "prefill": ["GB29NWBK60161331926819", "DE89370400440532013000"],
+            "default": ["GB29NWBK60161331926819", "DE89370400440532013000"]
+        }
+    },
+    "required": ["ibans"]
+}

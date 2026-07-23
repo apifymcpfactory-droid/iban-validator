@@ -1,0 +1,20 @@
+{
+  "name": "iban-validator-core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared ISO 13616 IBAN validation core for the iban-validator dual-surface product (Apify actor + MCPize server). Not published standalone.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "sync-core": "node scripts/sync-core.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

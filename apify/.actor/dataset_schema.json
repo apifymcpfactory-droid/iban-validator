@@ -1,0 +1,64 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Validation results",
+            "transformation": {
+                "fields": [
+                    "input",
+                    "valid",
+                    "status",
+                    "countryCode",
+                    "checkDigits",
+                    "sepaCountry",
+                    "printFormat",
+                    "structureValid",
+                    "checkDigitsValid"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "input": {
+                        "label": "Input",
+                        "format": "text"
+                    },
+                    "valid": {
+                        "label": "Valid?",
+                        "format": "boolean"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "countryCode": {
+                        "label": "Country",
+                        "format": "text"
+                    },
+                    "checkDigits": {
+                        "label": "Check digits",
+                        "format": "text"
+                    },
+                    "sepaCountry": {
+                        "label": "SEPA?",
+                        "format": "boolean"
+                    },
+                    "printFormat": {
+                        "label": "Print format",
+                        "format": "text"
+                    },
+                    "structureValid": {
+                        "label": "Structure OK?",
+                        "format": "boolean"
+                    },
+                    "checkDigitsValid": {
+                        "label": "Checksum OK?",
+                        "format": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://apify.com/schemas/v1/actor.ide.json",
+	"actorSpecification": 1,
+	"name": "iban-validator",
+	"title": "IBAN Validator: Verify & Bulk-Check Bank IBANs",
+	"description": "Validates IBANs offline against the official ISO 13616 mod-97 checksum and per-country structure — instant, no bank API, no data ever leaves the run. Bulk-clean a customer or supplier IBAN list before a payment run; $0.005 per IBAN checked.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "ts-empty",
+		"generatedBy": "Claude Code with Claude Sonnet 5"
+	},
+	"inputSchema": "./input_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"defaultMemoryMbytes": 256,
+	"dockerfile": "../Dockerfile"
+}
