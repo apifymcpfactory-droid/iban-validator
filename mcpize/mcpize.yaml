@@ -12,3 +12,14 @@ startCommand:
 
 configSchema:
   source: code
+
+pricing:
+  protocol: "x402"
+  network: "base"
+  recipient: "0x8AE422532dB78d6A5592244EA1DdF7B4a72E7824"
+  asset: "usdc"
+  tools:
+    - name: "validate_iban"
+      price: "0.01"
+      description: "Validate one IBAN's ISO 13616 checksum and country structure;
+        returns a typed pass/fail reason."
