@@ -23,3 +23,7 @@ pricing:
       price: "0.01"
       description: "Validate one IBAN's ISO 13616 checksum and country structure;
         returns a typed pass/fail reason."
+    - name: "bulk_check_iban"
+      price: "1.00"
+      description: "Validate up to 1,000 IBANs in one call — ISO 13616 checksum, country
+        format and SEPA membership for each, with a per-IBAN verdict."
