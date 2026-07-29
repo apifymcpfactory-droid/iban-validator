@@ -122,7 +122,7 @@ function createMcpServer(): McpServer {
       description:
         "Validate one IBAN entirely offline against the ISO 13616 mod-97 checksum and its country's official BBAN " +
         "structure — no bank API, no data leaves this call. Validation only: does not look up the bank name, BIC, " +
-        'or confirm the account exists. Example: { "iban": "GB29NWBK60161331926819" }.',
+        'or confirm the account exists. Not for lists: use bulk_check_iban for 2 or more IBANs in one call. Example: { "iban": "GB29NWBK60161331926819" }.',
       inputSchema: {
         iban: z
           .string()
@@ -146,7 +146,7 @@ function createMcpServer(): McpServer {
       title: "Bulk Validate IBANs",
       description:
         `Validate up to ${MAX_BULK_SIZE} IBANs in one call — offline, deterministic, no network. Returns one typed ` +
-        "result per IBAN, in order, plus a status-count summary. A single bad entry never fails the batch. " +
+        "result per IBAN, in order, plus a status-count summary. A single bad entry never fails the batch. Not for a single IBAN: use validate_iban instead. " +
         'Example: { "ibans": ["GB29NWBK60161331926819", "DE89370400440532013000"] }.',
       inputSchema: {
         ibans: z
