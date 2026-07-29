@@ -19,6 +19,20 @@ Every IBAN encodes a country-specific length and structure, plus a 2-digit check
 - **Validation only, honestly scoped** — this confirms an IBAN is *structurally and mathematically valid*. It does **not** look up the bank name, BIC, or confirm the account actually exists — that needs a licensed bank directory this server deliberately doesn't claim to have. Planned as a future addition once a free, public data source exists.
 - **Nothing stored** — every check is computed in memory against the bundled registry and discarded; nothing is logged or retained between calls.
 
+## Who it's for
+
+**For finance teams.** Before a SEPA payment run, validate the supplier IBAN column and get a per-row reason, so a transposed digit is caught before the bank rejects the batch.
+
+**For compliance and KYB.** Confirm a counterparty's stated IBAN is structurally genuine and note whether the country is a SEPA participant, as one input to an onboarding file.
+
+**For developers and AI agents.** Call `validate_iban` in a vendor-onboarding form and return the specific failure — wrong country, wrong length, failed checksum — rather than a generic "invalid".
+
+### When to use it, and when not to
+
+**Use it** to check that an IBAN is correctly formed for its country: checksum, length, structure and SEPA membership, offline and instantly.
+
+**Do not use it** to confirm an account exists or belongs to a particular person. No offline check can establish that, and this one does not try. It also does not look up bank names or BICs.
+
 ## Tools
 
 ### `validate_iban`
